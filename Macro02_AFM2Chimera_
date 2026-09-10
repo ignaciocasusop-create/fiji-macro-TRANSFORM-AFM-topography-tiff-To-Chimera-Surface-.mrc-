@@ -1,0 +1,31 @@
+// credits AFM2Chimera:
+// code by Ignacio CASUSO, INSERM, Marseille 2023
+// email: ignacio.casuso@inserm.fr
+// 
+substrate=getNumber("WRITE the number of slide JUST ABOVE the substrate to fill the SUBSTRATE", 0);
+setSlice(substrate); 
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Previous Slice [<]");
+run("Add...", "value=255 slice");
+run("Invert", "stack");
+rename("Tiff_VolumeStack_");
+waitForUser("save the stack as .tif in a folder and open it with Chimera");
+saveAs(".tif");
